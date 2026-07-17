@@ -1,19 +1,23 @@
 package com.divyanshu.radioguesser.radio;
 
 import com.divyanshu.radioguesser.geo.Coordinate;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import java.util.Set;
 import java.util.UUID;
 
+@Getter
+@RequiredArgsConstructor
 public final class RadioStation {
 
-    private UUID id;
-    private String name;
-    private String streamUrl;
-    private Coordinate location;
-    private String country;
-    private String city;
-    private String language;
-    private Set<String> tags;
+    private final UUID id;
+    private final String name;
+    private final String streamUrl;
+    private final Coordinate location;
+    private final String country;
+    private final String city;
+    private final String language;
+    private final Set<String> tags;
 
 }
